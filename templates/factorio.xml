@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-  <TemplateURL>https://raw.githubusercontent.com/anubis-code/unraid-templates/templates/factorio.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/anubis-code/unraid-templates/main/templates/factorio.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>GameServers</Category>
   <Name>factorio</Name>
