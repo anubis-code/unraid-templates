@@ -3,7 +3,6 @@
   <Name>factorio-server</Name>
   <Repository>factoriotools/factorio</Repository>
   <Registry>https://registry.hub.docker.com/r/factoriotools/factorio</Registry>
-
   <Privileged>false</Privileged>
   <Support></Support>
   <Project>https://github.com/factoriotools/factorio-docker</Project>
@@ -17,7 +16,6 @@
   <ExtraParams/> 
   <Description>&#xD;
     Factorio Server
-
   </Description>    
   <Networking>
     <Mode>bridge</Mode>
