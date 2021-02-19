@@ -1,21 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <TemplateURL>https://raw.githubusercontent.com/anubis-code/unraid-templates/main/anubis-code/factorio-server.xml</TemplateURL>
-  <Beta>False</Beta>
-  <Category>GameServers</Category>
+<?xml version="1.0"?>
+<Container version="2">
   <Name>factorio-server</Name>
-  <Description>
-
-  </Description>
-  <Overview>
-  </Overview>
-  <Support></Support>
-  <Registry>https://registry.hub.docker.com/r/factoriotools/factorio</Registry>
-  <GitHub>https://github.com/factoriotools/factorio-docker</GitHub>
   <Repository>factoriotools/factorio</Repository>
-  <Project>https://github.com/factoriotools/factorio-docker</Project>
-  <BindTime>true</BindTime>
+  <Registry>https://registry.hub.docker.com/r/factoriotools/factorio</Registry>
+
   <Privileged>false</Privileged>
+  <Support></Support>
+  <Project>https://github.com/factoriotools/factorio-docker</Project>
+  <Overview>&#xD;
+    Factorio Server using Docker for Unraid
+  </Overview>
+  <Category>GameServers</Category>
+  <WebUI></WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/anubis-code/unraid-templates/main/anubis-code/factorio-server.xml</TemplateURL>
+  <Icon></Icon>
+  <ExtraParams/> 
+  <Description>&#xD;
+    Factorio Server
+
+  </Description>    
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -28,8 +31,16 @@
          <HostPort>27015</HostPort>
          <ContainerPort>27015</ContainerPort>
          <Protocol>tcp</Protocol>
+      </Port>
     </Publish>
   </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/factorio</HostDir>
+      <ContainerDir>/factorio</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
   <Environment>
     <Variable>
       <Name>CONTEXT_PATH</Name>
@@ -52,14 +63,4 @@
       <Value>845</Value>
     </Variable>
   </Environment>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/factorio</HostDir>
-      <ContainerDir>/factorio</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <WebUI></WebUI>
-  <Icon></Icon>
-  <ExtraParams></ExtraParams>
-</Containers>
+</Container>
