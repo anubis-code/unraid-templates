@@ -11,7 +11,7 @@
   </Overview>
   <Category>GameServers</Category>
   <WebUI></WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/anubis-code/unraid-templates/main/anubis-code/factorio-server.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/anubis-code/unraid-templates/master/anubis/factorio-server.xml</TemplateURL>
   <Icon></Icon>
   <ExtraParams/> 
   <Description>&#xD;
